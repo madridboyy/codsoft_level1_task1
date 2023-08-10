@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Landing Page</title>
+        <style>
+            header{
+                width:100%;
+                height:100%;
+                background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url("https://www.doggies.com/blog/wp-content/uploads/2017/10/pet-montage-1024x1024.jpg");
+                background-size:cover;
+                font-family:serif;
+            }
+            nav{
+                height: 100px;
+                width:100%;
+                color:whitesmoke;
+                display:flex;
+                justify-content:space-around;
+                align-items: center;
+            }
+            .logo{
+                font-size: 30px;
+                color:floralwhite;
+                transition: 2s;
+            }
+            .logo:hover{
+                color:black;
+                background-color:darkorange;
+                padding:10px 20px;
+            }
+            .menu a{
+                text-decoration: none;
+                color:honeydew;
+                padding:10px 20px;
+                font-size: 25px;
+                position: relative;
+            }
+            .menu a:before{
+                content:'';
+                position: absolute;
+                top:0;
+                left:0;
+                width:0%;
+                height:100%;
+                border-bottom:2px solid; rgb(255, 255, 255);
+                transition: 0.3s all;
+            }
+            .menu a:hover:before{
+                width:90%;
+            }
+            .register a{
+                text-decoration:!important;
+                color:white;
+                font-size: 20px;
+                padding:15px 20px;
+                background-color:darkblue;
+                transition: 0.5s;
+            }
+            .register a:hover{
+                padding:20px 25px;
+                background-color: green;
+            
+                color:fuchsia;
+        
+            }
+            .text{
+                color:darkgray;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+            .text span{
+                letter-spacing: 5px;
+                font-size:30px ;
+            }
+            .text h1{
+                font-size: 50px;
+
+            }
+            .text a{
+                text-decoration: !important;
+                background-color:orangered;
+                color:black;
+                font-size:20px ;
+                padding:10px 20px;
+                transition: 0.5s;
+            }
+            .text a:hover{
+                border:  2px solid rgb(255, 255, 255);
+                padding:30px 35px;
+                background-color: white;
+            
+                color:darkblue
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+        <header>
+            <nav>
+              <div class="logo">Homiee pets</div>
+              <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Offer's</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Foods</a>
+              </div>
+              <div class="register">
+                <a href="#">Register</a>
+              </div>
+            </nav>
+            <section class="text">
+                <h1>Tail Wags and Hugs</h1>
+                <span>PETS ARE MAN'S BEST MEDICINE</span><br><br><br>
+                <a href="#">CHOOSE & BOOK YOUR'S</a>
+            </section>
+        </header>
+    </body>
+</html>
